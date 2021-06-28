@@ -1,7 +1,5 @@
 package resources;
 
-import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,7 +12,6 @@ public class DriverBuilder {
 	
 	private DriverType driverType;
 	private String[] defaulOptions;
-	public Properties props;
 	
 	public DriverBuilder(DriverType driverType) {
 		this.driverType = driverType;
