@@ -46,6 +46,7 @@ public class DriverHandler {
 	private void click(WebElement element) {
 		try {
 			highlight(element);
+			element.click();
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
