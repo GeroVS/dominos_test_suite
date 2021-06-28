@@ -32,12 +32,12 @@ public class DriverHandler {
 	private void navigate(WebDriver driver, String value) {
 		try {
 			String url;
-			if(!value.contains("http://") || !value.contains("https://")) {
+			if(!value.contains("http://") && !value.contains("https://")) {
 				url = "http://" + value;
 			}else
 				url = value;
-			
-				driver.navigate().to(url);
+
+				driver.get(url);
 		}catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
